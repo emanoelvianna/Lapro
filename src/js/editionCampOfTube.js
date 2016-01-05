@@ -3,6 +3,12 @@
 
 // Tarefa: 1.2 - clicar no item x e abrir open dialog
 
+
+function getCodigo() {
+    var codigo = document.getElementById("inputCodigo");
+    return codigo.value;
+}
+
 function my(item){
     var t = document.getElementsByClassName("item");
     
@@ -10,10 +16,8 @@ function my(item){
         var itemAtual = "item"+i;
         if(itemAtual == item) {
             var elemento = document.getElementsByClassName("item"+i)[0];
-            elemento.textContent = "Hello World";
+            elemento.textContent = getCodigo();
+            console.log(elemento);
         }
     }
 }
-
-// Dúvidas: Por que eu preciso adicionar [0] ao final quando dou um getElements.. ?!
-// Dúvidas: É errado separar os js para cada funcionalidade?!

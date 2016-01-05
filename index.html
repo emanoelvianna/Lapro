@@ -19,25 +19,41 @@
                 </div>
             </div>
         </div>
-
-        <!--
-        <ul class="items">
-            <li class="box item1" onclick="my()">item 1</li>
-            <li class="box item2" onclick="my()">item 2</li>
-        </ul>
-        -->
         
         <div class="items">
-            <div class="item item1" onclick="my('item1')">item 1</div>
-            <div class="item item2" onclick="my('item2')">item 2</div>
-            <div class="item item3" onclick="my('item3')">item 3</div>
-            <div class="item item4" onclick="my('item4')">item 4</div>
+            <div class="item item1" data-toggle="modal" data-target="#myModal" onclick="my('item1')"><span>item 1</span></div>
+            <div class="item item2" data-toggle="modal" data-target="#myModal" onclick="my('item2')"><span>item 2</span></div>
+            <div class="item item3" data-toggle="modal" data-target="#myModal" onclick="my('item3')"><span>item 3</span></div>
+            <div class="item item4" data-toggle="modal" data-target="#myModal" onclick="my('item4')"><span>item 4</span></div>
         </div>
         
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Informações do tubo ou alíquota</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group" onload="onload();">
+                                <label for="inputdefault">Código do tubo ou alíquota</label>
+                                <input class="form-control" id="inputCodigo" type="text">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- jQuery (plugins em JavaScript) -->
         <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
         </script><script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
         <script src="src/js/editionCampOfTube.js"></script>
-        <script src="src/js/openDialogFromItem.js"></script>
     </body>
 </html>
