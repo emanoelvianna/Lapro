@@ -3,11 +3,14 @@
 
 // Tarefa: 1 - clicar no item x e sua label deve ser "Hello World"
 
-function my(){
+function my(item){
     var t = document.getElementsByClassName("item");
     
     for(var i = 1; i <= t.length; i++) {
-        var elemento = document.getElementsByClassName("item" + i);
-        elemento.textContent = "Hello World";
+        var atual = "item"+i;
+        if(atual == item) {
+            var elemento =  document.getElementsByClassName(item);
+            elemento.textContent = "Hello World";
+        }
     }
 }
