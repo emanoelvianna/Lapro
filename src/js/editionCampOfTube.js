@@ -9,7 +9,7 @@ function my(item){
     for(var i = 1; i <= t.length; i++) {
         var atual = "item"+i;
         if(atual == item) {
-            var elemento =  document.getElementsByClassName(item);
+            var elemento = document.getElementsByClassName("item"+i)[0];
             elemento.textContent = "Hello World";
         }
     }
