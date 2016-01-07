@@ -1,4 +1,12 @@
 // como eu passo objeto para javascript? é assim: function my(Tubo tubo){} ?!
+
+
+/* Continuação da Tarefa1:
+
+Ao clicar no modal ele deve trazer a informacao que esta atualmente no item.
+
+*/ 
+
 var item;
 
 function setItem(item) {
@@ -18,6 +26,12 @@ function editarItem() {
         if(itemAtual == this.item) {
             var elemento = document.getElementsByClassName("item"+i)[0];
             elemento.textContent = codigo.value;
+            
         }
     }
+}
+
+function cacheInput() {
+    // deve trazer o cache do campo de input
+    
 }
