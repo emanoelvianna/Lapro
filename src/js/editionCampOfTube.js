@@ -1,10 +1,4 @@
 // como eu passo objeto para javascript? é assim: function my(Tubo tubo){} ?!
-
-// Passo a passo 
-// 1. Clicar no item.
-// 2. Editar campo de tubo.
-// 3. Salvar o texto no item
-
 var item;
 
 function setItem(item) {
