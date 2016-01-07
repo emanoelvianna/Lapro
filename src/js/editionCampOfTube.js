@@ -14,6 +14,3 @@ function my(item){
         }
     }
 }
-
-// Dúvidas: Por que eu preciso adicionar [0] ao final quando dou um getElements.. ?!
-// Dúvidas: É errado separar os js para cada funcionalidade?!
