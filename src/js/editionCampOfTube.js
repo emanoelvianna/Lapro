@@ -8,9 +8,7 @@
 var item;
 
 function setItem(item) {
-    console.log(item);
-    this.item = item;
-    console.log("retorno do item é: " +getItem());
+    this.item = item;  
 }
 
 function getItem() {
