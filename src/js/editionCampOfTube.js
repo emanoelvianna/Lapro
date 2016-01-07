@@ -1,23 +1,31 @@
 // como eu passo objeto para javascript? é assim: function my(Tubo tubo){} ?!
 
+// Passo a passo 
+// 1. Clicar no item.
+// 2. Editar campo de tubo.
+// 3. Salvar o texto no item
 
-// Tarefa: 1.2 - clicar no item x e abrir open dialog
+var item;
 
-
-function getCodigo() {
-    var codigo = document.getElementById("inputCodigo");
-    return codigo.value;
+function setItem(item) {
+    console.log(item);
+    this.item = item;
+    console.log("retorno do item é: " +getItem());
 }
 
-function my(item){
-    var t = document.getElementsByClassName("item");
+function getItem() {
+    return this.item;   
+}
+
+function editarItem() {
+    var listaDeItens = document.getElementsByClassName("item");
+    var codigo = document.getElementById("inputCodigo");
     
-    for(var i = 1; i <= t.length; i++) {
+    for(var i = 1; i <= listaDeItens.length; i++) {
         var itemAtual = "item"+i;
-        if(itemAtual == item) {
+        if(itemAtual == this.item) {
             var elemento = document.getElementsByClassName("item"+i)[0];
-            elemento.textContent = getCodigo();
-            console.log(elemento);
+            elemento.textContent = codigo.value;
         }
     }
 }
