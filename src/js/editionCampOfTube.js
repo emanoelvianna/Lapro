@@ -1,23 +1,26 @@
-// como eu passo objeto para javascript? é assim: function my(Tubo tubo){} ?!
-var item;
+var classItemClicado;
 
-function setItem(item) {
-    this.item = item;  
+function editarItem(item) {
+  this.classItemClicado = item;
+  cacheInput();
 }
 
-function getItem() {
-    return this.item;   
+function cacheInput() {
+  var input = document.getElementById("inputCodigo");
+  var item = document.getElementsByClassName(this.classItemClicado.replace('"', ""))[0];
+  input.value = item.textContent;
 }
 
-function editarItem() {
-    var listaDeItens = document.getElementsByClassName("item");
-    var codigo = document.getElementById("inputCodigo");
-    
-    for(var i = 1; i <= listaDeItens.length; i++) {
-        var itemAtual = "item"+i;
-        if(itemAtual == this.item) {
-            var elemento = document.getElementsByClassName("item"+i)[0];
-            elemento.textContent = codigo.value;
-        }
+function salvar() {
+  var listaDeItens = document.getElementsByClassName("item");
+  var codigo = document.getElementById("inputCodigo");
+
+  for(var i = 1; i <= listaDeItens.length; i++) {
+    var itemAtual = "item"+i;
+    var itemClicado = this.classItemClicado;
+    if(itemAtual == itemClicado) {
+      var elemento = document.getElementsByClassName("item"+i)[0];
+      elemento.textContent = codigo.value;
     }
+  }
 }
