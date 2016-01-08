@@ -8,7 +8,20 @@ function buscar() {
         var itemAtual = document.getElementsByClassName("item"+i)[0];
 
         if(itemAtual.textContent == elementoBuscado) {
-            alert("Elemento encontrado!");
+            displayNoneItem(elementoBuscado);
         }
+    }
+}
+
+
+function displayNoneItem(elementoBuscado) {
+    var listaDeItens = document.getElementsByClassName("item");
+
+    for(var i = 1; i <= listaDeItens.length; i++) {
+      var itemAtual = document.getElementsByClassName("item"+i)[0];
+
+      if(itemAtual.textContent != elementoBuscado) {
+          itemAtual.style.display = "none";
+      }
     }
 }
