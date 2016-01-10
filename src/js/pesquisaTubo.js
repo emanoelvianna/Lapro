@@ -1,5 +1,3 @@
-// Tarefa2: buscar por tubo ao informar código no input e clicar no botão buscar.
-
 function buscar() {
     var elementoBuscado = document.getElementById("inputBusca").value;
     var listaDeItens = document.getElementsByClassName("item");
@@ -12,7 +10,6 @@ function buscar() {
         }
     }
 }
-
 
 function displayNoneItem(elementoBuscado) {
     var listaDeItens = document.getElementsByClassName("item");

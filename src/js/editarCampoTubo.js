@@ -1,6 +1,6 @@
 var classItemClicado;
 
-function editarItem(item) {
+function editar(item) {
   this.classItemClicado = item;
   cacheInput();
 }
@@ -11,7 +11,7 @@ function cacheInput() {
   input.value = item.textContent;
 }
 
-function salvar() {
+function salvarInformacao() {
   var listaDeItens = document.getElementsByClassName("item");
   var codigo = document.getElementById("inputCodigo");
 
