@@ -2,13 +2,13 @@ var classItemClicado;
 
 var editar = function(item) {
   this.classItemClicado = item;
-//  cacheInput();
 }
 
 var cacheInput = function() {
   var input = document.getElementById("inputCodigo");
   var item = document.getElementsByClassName(this.classItemClicado.replace('"', ""))[0];
   input.value = item.textContent;
+  return input;
 }
 
 var salvarInformacao = function() {
