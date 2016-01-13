@@ -1,17 +1,17 @@
 var classItemClicado;
 
-function editar(item) {
+var editar = function(item) {
   this.classItemClicado = item;
-  cacheInput();
+//  cacheInput();
 }
 
-function cacheInput() {
+var cacheInput = function() {
   var input = document.getElementById("inputCodigo");
   var item = document.getElementsByClassName(this.classItemClicado.replace('"', ""))[0];
   input.value = item.textContent;
 }
 
-function salvarInformacao() {
+var salvarInformacao = function() {
   var listaDeItens = document.getElementsByClassName("item");
   var codigo = document.getElementById("inputCodigo");
 
