@@ -6,12 +6,12 @@ function buscar() {
         var itemAtual = document.getElementsByClassName("item"+i)[0];
 
         if(itemAtual.textContent == elementoBuscado) {
-            displayNoneItem(elementoBuscado);
+            destacaElemento(elementoBuscado);
         }
     }
 }
 
-function displayNoneItem(elementoBuscado) {
+function destacaElemento(elementoBuscado) {
     var listaDeItens = document.getElementsByClassName("item");
 
     for(var i = 1; i <= listaDeItens.length; i++) {
