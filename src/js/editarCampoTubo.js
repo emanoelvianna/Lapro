@@ -1,6 +1,10 @@
+var tubo = {
+  
+}
+
 var classItemClicado;
 
-var editarItem = function(item) {
+var editar = function(item) {
   this.classItemClicado = item;
 }
 
@@ -22,18 +26,18 @@ var cacheInput = function() {
   input.value = item.textContent;
 }
 
-var salvarInformacao = function() {
+var botao = document.getElementById('salvar');
+
+botao.addEventListener("click", function() {
   var listaDeItens = retornaListaDeItens("item");
   var codigo = retornaInput();
 
   for(var i = 1; i <= listaDeItens.length; i++) {
     var itemAtual = "item"+i;
-    var itemClicado = this.classItemClicado;
+    var itemClicado = classItemClicado;
     if(itemAtual == itemClicado) {
       var elemento = document.getElementsByClassName("item"+i)[0];
       elemento.textContent = codigo.value;
-      return true;
     }
   }
-  return false;
-}
+});

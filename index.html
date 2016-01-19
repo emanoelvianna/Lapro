@@ -21,11 +21,10 @@
         </div>
 
         <div class="items">
-            <div class="item item1" href="#myModal" data-toggle="modal" onclick="editarItem('item1')"><span>item 1</span></div>
-            <div class="item item2" href="#myModal" data-toggle="modal" onclick="editarItem('item2')"><span>item 2</span></div>
-            <div class="item item3" href="#myModal" data-toggle="modal" onclick="editarItem('item3')"><span>item 3</span></div>
-            <div class="item item4" href="#myModal" data-toggle="modal" onclick="editarItem('item4')"><span>item 4</span></div>
-
+            <div class="item item1" href="#myModal" data-toggle="modal" onclick="editar('item1')"><span>item 1</span></div>
+            <div class="item item2" href="#myModal" data-toggle="modal" onclick="editar('item2')"><span>item 2</span></div>
+            <div class="item item3" href="#myModal" data-toggle="modal" onclick="editar('item3')"><span>item 3</span></div>
+            <div class="item item4" href="#myModal" data-toggle="modal" onclick="editar('item4')"><span>item 4</span></div>
 
             <!-- <div class="item item4" data-toggle="modal" data-target="#myModal" onclick="editarItem('item1')"><span>item 1</span></div> -->
         </div>
@@ -49,7 +48,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="salvarInformacao()">salvar</button>
+                        <button id="salvar" type="button" class="btn btn-default" data-dismiss="modal">salvar</button>
                     </div>
                 </div>
             </div>
