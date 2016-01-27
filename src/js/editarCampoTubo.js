@@ -1,3 +1,7 @@
+
+console.log(tubo.getCodigo());
+
+
 var classItemClicado;
 
 var editar = function(item) {
