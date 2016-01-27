@@ -6,7 +6,7 @@ var classItemClicado;
 
 var editar = function(item) {
   this.classItemClicado = item;
-}
+};
 
 function retornaItemClicado(argument) {
   return document.getElementsByClassName(this.classItemClicado.replace('"', ""))[0];
@@ -24,7 +24,7 @@ var cacheInput = function() {
   var item = retornaItemClicado();
   var input = retornaInput("inputCodigo");
   input.value = item.textContent;
-}
+};
 
 var botao = document.getElementById('salvar');
 botao.addEventListener("click", function() {
