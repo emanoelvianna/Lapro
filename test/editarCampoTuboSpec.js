@@ -6,9 +6,11 @@ describe("Editar campos de tubos", function() {
     expect(classItemClicado).toEqual("item1");
   });
 
-  it("valor escrito no campo input deve ser o novo valor do item", function() {
-    var novoValor = 1234;
-    
+  it("retorno de lista de itens não deve ser vazio", function() {
+    var item = "item";
+    var list = retornaListaDeItens(item);
+    console.log(list.length);
+    expect(list).not.toBeLessThan(0);
   });
 
 });

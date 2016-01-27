@@ -1,19 +1,15 @@
-var tubo = {
-  
-}
-
 var classItemClicado;
 
 var editar = function(item) {
   this.classItemClicado = item;
 }
 
-function retornaItem() {
+function retornaItemClicado(argument) {
   return document.getElementsByClassName(this.classItemClicado.replace('"', ""))[0];
 }
 
-function retornaInput() {
-  return document.getElementById("inputCodigo");
+function retornaInput(argument) {
+  return document.getElementById(argument);
 }
 
 function retornaListaDeItens(argument) {
@@ -21,16 +17,15 @@ function retornaListaDeItens(argument) {
 }
 
 var cacheInput = function() {
-  var item = retornaItem();
-  var input = retornaInput();
+  var item = retornaItemClicado();
+  var input = retornaInput("inputCodigo");
   input.value = item.textContent;
 }
 
 var botao = document.getElementById('salvar');
-
 botao.addEventListener("click", function() {
   var listaDeItens = retornaListaDeItens("item");
-  var codigo = retornaInput();
+  var codigo = retornaInput("inputCodigo");
 
   for(var i = 1; i <= listaDeItens.length; i++) {
     var itemAtual = "item"+i;
