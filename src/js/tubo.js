@@ -1,6 +1,6 @@
 var tubo = (function() {
   // aqui é privado
-  var _clazz = null;
+  var _clazzClicada = null;
   var _codigo = 0;
   var _setCodigo = function(argument) {
     _codigo = argument;
@@ -8,17 +8,17 @@ var tubo = (function() {
   var _getCodigo = function() {
     return _codigo;
   }
-  var _setClazz = function(argument) {
-    _clazz = argument;
+  var _setclazzClicada = function(argument) {
+    _clazzClicada = argument;
   }
-  var _getClazz = function() {
-    return _clazz;
+  var _getclazzClicada = function() {
+    return _clazzClicada;
   }
   // aqui é publico
   return {
     setCodigo: _setCodigo,
     getCodigo: _getCodigo,
-    setClazz:  _setClazz,
-    getClazz: _getClazz
+    setclazzClicada:  _setclazzClicada,
+    getclazzClicada: _getclazzClicada
   };
 })();

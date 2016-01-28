@@ -1,29 +1,23 @@
-
-console.log(tubo.getCodigo());
-
-
-var classItemClicado;
-
 var editar = function(item) {
-  this.classItemClicado = item;
+  tubo.setclazzClicada(item);
 };
 
-function retornaItemClicado(argument) {
-  return document.getElementsByClassName(this.classItemClicado.replace('"', ""))[0];
-}
+function retornaItemClicado() {
+  return tubo.getclazzClicada();
+};
 
 function retornaInput(argument) {
   return document.getElementById(argument);
-}
+};
 
 function retornaListaDeItens(argument) {
   return document.getElementsByClassName(argument);
-}
+};
 
-var cacheInput = function() {
+function cacheInput() {
   var item = retornaItemClicado();
   var input = retornaInput("inputCodigo");
-  input.value = item.textContent;
+  input.value = item;
 };
 
 var botao = document.getElementById('salvar');
@@ -33,7 +27,9 @@ botao.addEventListener("click", function() {
 
   for(var i = 1; i <= listaDeItens.length; i++) {
     var itemAtual = "item"+i;
-    var itemClicado = classItemClicado;
+    console.log(itemAtual);
+    var itemClicado = tubo.getclazzClicada();
+    console.log(itemClicado);
     if(itemAtual == itemClicado) {
       var elemento = document.getElementsByClassName("item"+i)[0];
       elemento.textContent = codigo.value;
