@@ -12,13 +12,13 @@ var tubo = (function() {
     _clazzClicada = argument;
   }
   var _getclazzClicada = function() {
-    return _clazzClicada;
-  }
-  // aqui é publico
+      return _clazzClicada;
+    }
+    // aqui é publico
   return {
     setCodigo: _setCodigo,
     getCodigo: _getCodigo,
-    setclazzClicada:  _setclazzClicada,
+    setclazzClicada: _setclazzClicada,
     getclazzClicada: _getclazzClicada
   };
 })();

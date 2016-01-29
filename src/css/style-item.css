@@ -1,27 +1,23 @@
-
 .items {
-    background-color: azure;   
+  background-color: azure;
 }
-
 .item {
-    background-color: skyblue;
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: skyblue;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .btn-block {
-    display: block;
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
 }
-
 #dropzone {
   padding: 20px;
   background: #eee;

@@ -22,15 +22,15 @@ function cacheInput() {
 };
 
 var botao = document.getElementById('salvar');
-botao.addEventListene("click", function() {
+botao.addEventListener("click", function() {
   var listaDeItens = retornaListaDeItens("item");
   var codigo = retornaInput("inputCodigo");
 
-  for(var i = 1; i <= listaDeItens.length; i++) {
-    var itemAtual = "item"+i;
+  for (var i = 1; i <= listaDeItens.length; i++) {
+    var itemAtual = "item" + i;
     var itemClicado = tubo.getclazzClicada();
-    if(itemAtual == itemClicado) {
-      var elemento = document.getElementsByClassName("item"+i)[0];
+    if (itemAtual == itemClicado) {
+      var elemento = document.getElementsByClassName("item" + i)[0];
       elemento.textContent = codigo.value;
     }
   }
