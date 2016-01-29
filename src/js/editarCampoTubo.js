@@ -1,9 +1,18 @@
-var editar = function(item) {
-  tubo.setclazzClicada(item);
-};
+/*
+  TODO: o retornaClazzClicada deve retonrar a classe clicada
+  isso também deve corrigir o bug do cache que tras a classe e não o value no input
+  TODO: é preciso ver se é uma boa usar o this e se ele ira nos ajudar de fato!
+
+*/
+
+
+function retornaClazzClicada() {
+  return tubo.getClazzClicado();
+}
 
 function retornaItemClicado() {
-  return tubo.getclazzClicada();
+  var aux = tubo.getClazzClicado()
+  return aux.value;
 }
 
 function retornaInput(argument) {
@@ -18,7 +27,6 @@ function cacheInput() {
   var item = retornaItemClicado();
   var input = retornaInput("inputCodigo");
   input.value = item;
-  return input;
 }
 
 var botao = document.getElementById('salvar');
@@ -28,7 +36,7 @@ botao.addEventListener("click", function() {
 
   for (var i = 1; i <= listaDeItens.length; i++) {
     var itemAtual = "item" + i;
-    var itemClicado = tubo.getclazzClicada();
+    var itemClicado = tubo.getClazzClicado();
     if (itemAtual == itemClicado) {
       var elemento = document.getElementsByClassName("item" + i)[0];
       elemento.textContent = codigo.value;
