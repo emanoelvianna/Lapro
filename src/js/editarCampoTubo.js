@@ -4,22 +4,22 @@ var editar = function(item) {
 
 function retornaItemClicado() {
   return tubo.getclazzClicada();
-};
+}
 
 function retornaInput(argument) {
   return document.getElementById(argument);
-};
+}
 
 function retornaListaDeItens(argument) {
   return document.getElementsByClassName(argument);
-};
+}
 
 function cacheInput() {
   var item = retornaItemClicado();
   var input = retornaInput("inputCodigo");
   input.value = item;
   return input;
-};
+}
 
 var botao = document.getElementById('salvar');
 botao.addEventListener("click", function() {
