@@ -15,9 +15,10 @@ botao.addEventListener("click", function() {
     var itemAtual = document.getElementById("item" + i);
 
     if (itemAtual.textContent == elemento) {
-      destacaElemento(elemento);
+      return destacaElemento(elemento);
     }
   }
+  console.log("Item não encontrado!");
 });
 
 function destacaElemento(elemento) {

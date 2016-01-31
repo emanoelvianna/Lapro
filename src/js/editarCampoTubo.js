@@ -3,7 +3,7 @@ function retornaClazzClicada() {
 }
 
 function retornaItemClicado() {
-  return tubo.getClazzClicado().textContent;;
+  return tubo.getClazzClicado().textContent;
 }
 
 function retornaInput(argument) {
@@ -14,16 +14,19 @@ function retornaListaDeItens(argument) {
   return document.getElementsByClassName(argument);
 }
 
-function cacheInput() {
-  var item = retornaItemClicado();
-  var input = retornaInput("inputCodigo");
-  input.value = item;
+function cacheInput(argument) {
+  return retornaInput(argument.id).value = retornaItemClicado();
 }
 
+//TODO:melhorar este código aqui, ainda precisa realizar o teste também!
 var botao = document.getElementById('salvar');
 botao.addEventListener("click", function() {
-  var listaDeItens = retornaListaDeItens("item");
   var codigo = retornaInput("inputCodigo");
-  var itemClicado = tubo.getClazzClicado();
-  itemClicado.textContent = codigo.value;
+  var classClicada = tubo.getClazzClicado();
+  classClicada.textContent = codigo.value;
+  tubo.setCodigo = codigo.value;
 });
+
+function setValue() {
+
+}
