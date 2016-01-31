@@ -1,5 +1,5 @@
-function buscar() {
-  return elementoBuscado = document.getElementById("inputBusca").value;
+function elementoBuscado() {
+  return document.getElementById("inputBusca").value;
 }
 
 function retornaListaDeItens(argument) {
@@ -8,25 +8,25 @@ function retornaListaDeItens(argument) {
 
 var botao = document.getElementById('buscar');
 botao.addEventListener("click", function() {
-  var elemento = buscar();
+  var elemento = elementoBuscado();
   var listaDeItens = retornaListaDeItens("item");
 
   for (var i = 1; i <= listaDeItens.length; i++) {
-    var itemAtual = document.getElementsByClassName("item" + i)[0];
+    var itemAtual = document.getElementById("item" + i);
 
-    if (itemAtual.textContent == elementoBuscado) {
-      destacaElemento(elementoBuscado);
+    if (itemAtual.textContent == elemento) {
+      destacaElemento(elemento);
     }
   }
 });
 
-function destacaElemento(elementoBuscado) {
+function destacaElemento(elemento) {
   var listaDeItens = retornaListaDeItens("item");
 
   for (var i = 1; i <= listaDeItens.length; i++) {
-    var itemAtual = document.getElementsByClassName("item" + i)[0];
+    var itemAtual = document.getElementById("item" + i);
 
-    if (itemAtual.textContent != elementoBuscado) {
+    if (itemAtual.textContent != elemento) {
       itemAtual.style.display = "none";
     }
   }

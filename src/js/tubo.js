@@ -1,6 +1,6 @@
 var tubo = (function() {
   // aqui é privado
-  var _clazzClicado = null;
+  var _clazzClicado;
   var _codigo = 0;
   var _setCodigo = function(argument) {
     _codigo = argument;
