@@ -22,11 +22,11 @@ function cacheInput(argument) {
 var botao = document.getElementById('salvar');
 botao.addEventListener("click", function() {
   var codigo = retornaInput("inputCodigo");
-  var classClicada = tubo.getClazzClicado();
-  classClicada.textContent = codigo.value;
+  setCodigoAtualNoInput(codigo);
   tubo.setCodigo = codigo.value;
 });
 
-function setValue() {
-
+function setCodigoAtualNoInput(codigo) {
+  var classe = tubo.getClazzClicado();
+  classe.textContent = codigo.value;
 }
