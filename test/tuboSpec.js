@@ -1,11 +1,9 @@
-describe("Tubo", function() {
+describe("Tubo:", function() {
 
-  it("campo input deve trazer o código atual do item clicado", function() {
-
-  });
-
-  it("campo input deve trazer o código atual do item clicado", function() {
-
+  it("o retorno da classe clicada não deve ser null", function() {
+    var elemento = document.createElement('div');
+    tubo.setClazzClicado(elemento);
+    expect(retornaClazzClicada()).toBeTruthy();
   });
 
 })();
