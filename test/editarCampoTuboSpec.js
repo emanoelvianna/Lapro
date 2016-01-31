@@ -1,9 +1,25 @@
 describe("Editar campos de tubos:", function() {
 
-  it("campo input deve trazer o código atual do item clicado", function() {
-    var item = "item1";
-    tubo.setItemClicado(item);
-    expect(retornaItemClicado()).toEqual(item);
+  it("retorno de classe clicada não deve ser null", function functionName() {
+    var elemento = document.createElement('div');
+    tubo.setClazzClicado(elemento);
+    expect(retornaClazzClicada()).toBeTruthy();
+  });
+
+  it("retorna item clicado não deve ser null", function functionName() {
+    var elemento = document.createElement('div');
+    elemento.textContent = "teste";
+    tubo.setClazzClicado(elemento);
+    expect(retornaItemClicado()).toBeTruthy();
+  });
+
+  it("deve retornar no item clicado o código setado", function functionName() {
+    var elemento = document.createElement("div");
+    elemento.setAttribute("id", "item1");
+    elemento.setAttribute("textContent", "item1");
+    elemento.setAttribute("class", "teste");
+    tubo.setClazzClicado(elemento);
+    expect(elemento.textContent).toEqual(retornaItemClicado());
   });
 
   it("retorno de lista de itens não deve ser vazio", function() {
@@ -12,10 +28,4 @@ describe("Editar campos de tubos:", function() {
     expect(list).not.toBeLessThan(0);
   });
 
-  it("modal deve trazer no campo input o código atual do tubo", function() {
-    var item = "item1";
-    tubo.setItemClicado(item);
-    var retorno = retornaItemClicado();
-    expect(retorno).toEqual(item);
-  });
 });
