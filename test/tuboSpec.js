@@ -15,7 +15,13 @@ describe("Tubo:", function() {
     expect(elemento).toEqual(tubo.getClazzClicado());
   });
 
-  it("deve ser possivel setar o código no atributo _codigo", function functionName() {
+  it("ao setar no atributo _codigo ele não deve ser null", function functionName() {
+    var codigo = "12345";
+    tubo.setCodigo(codigo);
+    expect(tubo.getCodigo()).toBeTruthy();
+  });
+
+  it("o retorno do atributo _codigo deve ser igual ao setado", function functionName() {
     var codigo = "12345";
     tubo.setCodigo(codigo);
     expect(codigo).toEqual(tubo.getCodigo());
