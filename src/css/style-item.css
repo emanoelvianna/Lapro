@@ -1,8 +1,9 @@
 .items {
   background-color: azure;
+  float: left;
 }
 .item {
-  background-color: skyblue;
+  background-color: white;
   height: 100px;
   width: 100px;
   margin: 10px;
@@ -11,6 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* sombra */
+  -webkit-box-shadow: 7px 6px 22px -8px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 7px 6px 22px -8px rgba(0, 0, 0, 0.31);
+  box-shadow: 7px 6px 22px -8px rgba(0, 0, 0, 0.31);
 }
 .btn-block {
   display: block;
@@ -25,4 +30,11 @@
   margin-bottom: 20px;
   z-index: 0;
   border-radius: 10px;
+}
+.menu-lateral {
+  background-color: skyblue;
+  float: left;
+  width: 50px;
+  height: 100%;
+  text-align: center;
 }
