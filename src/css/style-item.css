@@ -1,14 +1,13 @@
 .items {
-  background-color: azure;
-  float: left;
+  width: 100%;
 }
 .item {
+  float: left;
   background-color: white;
   height: 100px;
   width: 100px;
   margin: 10px;
   text-align: center;
-  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +15,8 @@
   -webkit-box-shadow: 7px 6px 22px -8px rgba(0, 0, 0, 0.31);
   -moz-box-shadow: 7px 6px 22px -8px rgba(0, 0, 0, 0.31);
   box-shadow: 7px 6px 22px -8px rgba(0, 0, 0, 0.31);
+  /* borda */
+  border: 1px solid #E2DEDE;
 }
 .btn-block {
   display: block;
@@ -33,8 +34,8 @@
 }
 .menu-lateral {
   background-color: #38393d;
-  float: left;
   width: 50px;
+  float: left;
   height: 100%;
   text-align: center;
 }
