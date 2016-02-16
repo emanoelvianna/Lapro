@@ -24,18 +24,21 @@
   padding-right: 0;
   padding-left: 0;
 }
-#dropzone {
-  padding: 20px;
-  background: #eee;
-  min-height: 100px;
-  margin-bottom: 20px;
-  z-index: 0;
-  border-radius: 10px;
-}
 .menu-lateral {
-  background-color: #38393d;
+  background-color: #E4E4E4;
   width: 50px;
   float: left;
   height: 100%;
   text-align: center;
+}
+.busca {
+  width: 100%;
+}
+.icon-home {
+  height: 20px;
+  width: 20px;
+}
+.icon-setting {
+  height: 20px;
+  width: 20px;
 }
