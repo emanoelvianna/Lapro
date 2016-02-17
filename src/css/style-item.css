@@ -30,3 +30,7 @@
   height: 20px;
   width: 20px;
 }
+
+.busca {
+  display: flex;
+}

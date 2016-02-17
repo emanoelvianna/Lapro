@@ -11,39 +11,39 @@
 </head>
 
 <body>
-    <div class="profile-usermenu menu-lateral">
-      <ul class="nav">
-        <li class="active">
-          <a href="#">
-            <img class="icon-home" src="src/img/home.svg" alt="home"></a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="icon-setting" src="src/img/setting.svg" alt="setting"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
+  <div class="profile-usermenu menu-lateral">
+    <ul class="nav">
+      <li class="active">
+        <a href="#">
+          <img class="icon-home" src="src/img/home.svg" alt="home"></a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="icon-setting" src="src/img/setting.svg" alt="setting"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
 
-    <div class="principal">
-      <div class="row busca">
-        <div class="col-lg-6">
-          <div class="input-group">
-            <input type="text" class="form-control" id="inputBusca" placeholder="Pesquisar código do tubo ou alíquota">
-            <span class="input-group-btn">
-          <button id="buscar" class="btn btn-default" type="button">Buscar</button>
-        </span>
-          </div>
+  <div class="principal">
+    <div class="busca">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control" id="inputBusca" placeholder="Pesquisar código do tubo ou alíquota">
+          <span class="input-group-btn">
+            <button id="buscar" class="btn btn-default" type="button">Buscar</button>
+          </span>
         </div>
       </div>
-
-      <div class="items">
-        <div id="item1" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>item 1</span></div>
-        <div id="item2" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>item 2</span></div>
-        <div id="item3" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>item 3</span></div>
-        <div id="item4" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>item 4</span></div>
-      </div>
     </div>
+
+    <div class="items">
+      <div id="item1" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>item 1</span></div>
+      <div id="item2" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>item 2</span></div>
+      <div id="item3" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>item 3</span></div>
+      <div id="item4" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>item 4</span></div>
+    </div>
+  </div>
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog" onshow="cacheInput(inputCodigo)">
     <div class="modal-dialog">
