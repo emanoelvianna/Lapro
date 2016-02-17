@@ -1,5 +1,9 @@
-.items {
-  width: 100%;
+.menu-lateral {
+  float: left;
+  background-color: #5BADFF;
+  width: 50px;
+  height: 100%;
+  text-align: center;
 }
 .item {
   float: left;
@@ -17,22 +21,6 @@
   box-shadow: 7px 6px 22px -8px rgba(0, 0, 0, 0.31);
   /* borda */
   border: 1px solid #E2DEDE;
-}
-.btn-block {
-  display: block;
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
-}
-.menu-lateral {
-  background-color: #E4E4E4;
-  width: 50px;
-  float: left;
-  height: 100%;
-  text-align: center;
-}
-.busca {
-  width: 100%;
 }
 .icon-home {
   height: 20px;
