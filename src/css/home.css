@@ -1,3 +1,30 @@
 .quadros {
   text-align: center;
 }
+.lista-de-quadros li {
+  list-style: none;
+}
+.quadro {
+  background-color: #959da1;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  line-height: 20px;
+  margin-bottom: 8px;
+  padding: 8px 9pt;
+  position: relative;
+}
+.novo-quadro {
+  background-color: #959da1;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  line-height: 20px;
+  margin-bottom: 8px;
+  padding: 8px 9pt;
+  position: relative;
+}

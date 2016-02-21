@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="src/css/home.css" rel="stylesheet"/>
+  <link href="src/css/home.css" rel="stylesheet" />
   <link href="lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" media="screen" />
   <title>Home</title>
 </head>
@@ -13,12 +13,18 @@
   <!-- TODO:  ao clicar em um novo quadro deve se abrir um modal pedindo algumsa informações sobre ele -->
 
   <div class="quadros">
-    <div class="quadro">
-      <span>Nome do quadro</span>
-    </div>
-    <div class="novo-quadro">
-      <span>Criar novo quadro…</span>
-    </div>
+    <ul class="lista-de-quadros">
+      <li>
+        <a class="quadro" href="#">
+          <span>Nome do quadro</span>
+        </a>
+      </li>
+      <li>
+        <a class="novo-quadro" href="#">
+          <span>Criar novo quadro…</span>
+        </a>
+      </li>
+    </ul>
   </div>
 </body>
 
