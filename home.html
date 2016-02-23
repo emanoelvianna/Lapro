@@ -27,7 +27,7 @@
     <div class="busca">
       <div class="col-lg-6">
         <div class="input-group">
-          <input type="text" class="form-control" id="inputBusca" placeholder="Pesquisar código do tubo ou alíquota">
+          <input type="text" class="form-control" id="inputBusca" placeholder="Pesquisar código do tubo ou alíquota nas geladeiras">
           <span class="input-group-btn">
             <button id="buscar" class="btn btn-default" type="button">Buscar</button>
           </span>
@@ -35,8 +35,46 @@
       </div>
     </div>
 
-
+    <div class="quadros">
+      <ul class="lista-de-quadros">
+        <li>
+          <a class="quadro" href="#">
+            <span>Nome do quadro</span>
+          </a>
+        </li>
+        <li>
+          <a href="#myModal" data-toggle="modal" class="novo-quadro" href="#">
+            <span>Criar novo quadro…</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
+
+  <!-- Modal  -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Criar novo quadro</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group" onload="onload();">
+              <label for="inputdefault">Título do quadro</label>
+              <input class="form-control" id="inputCodigo" type="text">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="salvar" type="button" class="btn btn-default" data-dismiss="modal">salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- jQuery (plugins em JavaScript) -->
   <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
   <script type="text/javascript" src="lib/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>

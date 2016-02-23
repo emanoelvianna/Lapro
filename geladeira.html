@@ -35,6 +35,11 @@
       </div>
     </div>
 
+    <div class="nova-gaveta">
+      <a href="#myModal2" data-toggle="modal">
+        <span>Adicionar nova gaveta</span>
+      </a>
+    </div>
     <div class="items">
       <div id="item1" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>tubo 1</span></div>
       <div id="item2" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>tubo 2</span></div>
@@ -46,7 +51,7 @@
       <div id="item8" class="item" href="#myModal" data-toggle="modal" onclick="tubo.setClazzClicado(this)"><span>tubo 8</span></div>
     </div>
   </div>
-  <!-- Modal -->
+  <!-- Modal  de items -->
   <div class="modal fade" id="myModal" role="dialog" onshow="cacheInput(inputCodigo)">
     <div class="modal-dialog">
       <!-- Modal content-->
@@ -60,6 +65,30 @@
             <div class="form-group" onload="onload();">
               <label for="inputdefault">Código do tubo ou alíquota</label>
               <input class="form-control" id="inputCodigo" type="text">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button id="salvar" type="button" class="btn btn-default" data-dismiss="modal">salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TODO: Adicionar com algunas configurações para criar uma nova gaveta  -->
+  <!-- Modal  para crair novas gavetas -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Informações do tubo ou alíquota</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group" onload="onload();">
+
             </div>
           </form>
         </div>

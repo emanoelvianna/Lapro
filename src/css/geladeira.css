@@ -54,3 +54,11 @@
   -webkit-justify-content: center;
   justify-content: center;
 }
+.nova-gaveta {
+  height: 50px;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}

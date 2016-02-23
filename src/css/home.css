@@ -18,10 +18,9 @@
   list-style: none;
 }
 .quadro {
-  float: left;
   background-color: white;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 200px;
   margin: 10px;
   text-align: center;
   display: flex;
@@ -35,10 +34,9 @@
   border: 1px solid #E2DEDE;
 }
 .novo-quadro {
-  float: left;
   background-color: white;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 200px;
   margin: 10px;
   text-align: center;
   display: flex;
@@ -64,10 +62,6 @@
 .quadros {
   text-align: center;
   display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
 }
 
 .lista-de-quadros {
