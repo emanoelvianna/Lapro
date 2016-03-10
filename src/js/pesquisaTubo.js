@@ -1,3 +1,7 @@
+
+// TODO: A busca hoje realizada pelo id da div deve ser modificada?
+// TODO: também é necessario criar uma mensagem de tubo não encontrado!
+
 function elementoBuscado() {
   return document.getElementById("inputBusca").value;
 }
