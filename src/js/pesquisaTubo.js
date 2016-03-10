@@ -28,11 +28,10 @@ botao.addEventListener("click", function() {
 function destacaElemento(elemento) {
   var listaDeItens = retornaListaDeItens("item");
 
-  for (var i = 1; i <= listaDeItens.length; i++) {
-    var itemAtual = document.getElementById("item" + i);
-
-    if (itemAtual.textContent != elemento) {
-      itemAtual.style.display = "none";
+  var size = listaDeItens.length;
+  for (var i = 0; i <= size - 1; i++) {
+    if (listaDeItens[i].textContent != elemento) {
+      listaDeItens[i].style.display = "none";
     }
 
   }
