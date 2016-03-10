@@ -44,11 +44,11 @@
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-  padding: 40px;
+  padding: 20px
 }
-
 .items {
   background-color: #e1e8e4;
+<<<<<<< HEAD:src/css/geladeira.css
   display: flex;
   -webkit-align-items: center;
   align-items: center;
@@ -57,6 +57,8 @@
 }
 .nova-gaveta {
   height: 50px;
+=======
+>>>>>>> 88339ac49a7f2497306b7891e620a9c71256c966:src/css/style-item.css
   display: flex;
   -webkit-align-items: center;
   align-items: center;

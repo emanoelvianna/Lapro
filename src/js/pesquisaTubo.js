@@ -30,5 +30,6 @@ function destacaElemento(elemento) {
     if (itemAtual.textContent != elemento) {
       itemAtual.style.display = "none";
     }
+
   }
 }
