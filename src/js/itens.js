@@ -13,8 +13,8 @@ button.addEventListener("click", function functionName() {
     ele.setAttribute("id", "item" + contador);
     ele.setAttribute("class", "item");
     ele.innerHTML = "tubo " + contador;
-    var currentDiv = document.getElementById("body");
-    document.body.insertBefore(ele, currentDiv);
+    var currentDiv = document.getElementsByClassName('itens');
+    currentDiv.insertBefore(ele, currentDiv.firstChild);
     contador++;
   }
 });
