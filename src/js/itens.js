@@ -23,8 +23,7 @@ button.addEventListener("click", function functionName() {
   var textElemento = document.createTextNode("tubo");
   elemento.appendChild(textElemento);
 
-/*
   var list = document.getElementsByClassName('itens1');
-  list.insertBefore(elemento, list.childNodes[0]);
-*/
+	list[0].insertBefore(elemento, list[0].childNodes[0]);
+
 });
