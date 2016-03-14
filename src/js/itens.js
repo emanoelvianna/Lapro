@@ -9,26 +9,22 @@ button.addEventListener("click", function functionName() {
 
   //TODO: usar uma lista para gerar os elementos e ao final adicionar!
 
+  var novaLista = document.createElement("ul");
+  novaLista.setAttribute("class", "itens1 estilo-itens");
+
+  var listItens = document.getElementById("lista");
+  listItens.insertBefore(novaLista, listItens.childNodes[0]);
+
   var elemento = document.createElement("li");
   elemento.setAttribute("class", "item");
+  elemento.setAttribute("href", "#myModal");
+  elemento.setAttribute("data-toggle", "modal");
+  elemento.setAttribute("onclick", "tubo.setClazzClicado(this)");
   var textElemento = document.createTextNode("tubo");
   elemento.appendChild(textElemento);
 
-  var list = document.getElementById("itens");
+/*
+  var list = document.getElementsByClassName('itens1');
   list.insertBefore(elemento, list.childNodes[0]);
-
-
-  /**
-    var quantidade = retornaInput("inputAmount").value;
-    var contador = 0;
-    while (contador < quantidade) {
-      var ele = document.createElement("div");
-      ele.setAttribute("id", "item" + contador);
-      ele.setAttribute("class", "item");
-      ele.innerHTML = "tubo " + contador;
-      var currentDiv = document.getElementsByClassName('itens');
-      currentDiv.insertBefore(ele, currentDiv.firstChild);
-      contador++;
-    }
-  **/
+*/
 });
